@@ -1,0 +1,203 @@
+/* --------- Global -------- */
+
+@import url(./section1.css);
+@import url(./section2.css);
+
+@import url(./section4.css);
+
+:root {
+    --color-back-green: #1E6B60;
+    --color-dark-green: rgb(21, 74, 66);
+    --color-neon: #07FFFF;
+    --header-shadow: 0 3px 25px rgba(0,0,0,0.2);
+    --color-dark-grey: #D9D9D9;
+    --color-grey: #E4E4E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-size: 10px;
+    font-family: Consolas;
+}
+
+
+/* ----------- Header --------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    background-color:  var(--color-back-green);
+    box-shadow: 0 3px 25px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+header .logo {
+    margin-left: 2rem;
+}
+
+header .logo h1{
+    font-size: 5rem;
+    color: var(--color-neon);
+}
+
+header nav {
+    display: none;
+}
+
+header .burger {
+    margin-right: 2rem;
+}
+
+header .burger i{
+    font-size: 2.5rem;
+    color: var(--color-neon);
+}
+
+header .overlay {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    display: flex;
+    height: 100vh;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+header .overlay #space {
+    width: 30vw;
+    height: 100vh;
+}
+
+header .overlay .overlay-content {
+    width: 70vw;
+    height: 100vh;
+    background-color: var(--color-dark-green);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+header .overlay .overlay-content ul {
+    list-style-type: none;
+}
+
+header .overlay .overlay-content ul li {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    color: var(--color-neon);
+}
+
+header .overlay .overlay-content ul li:hover {
+    background-color: rgb(78, 78, 78);
+}
+
+.overlay-content .cross {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    color: var(--color-neon);
+}
+
+header .leftlink {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+}
+
+header .leftlink ul {
+    list-style: none;
+    color: var(--color-neon);
+}
+
+header .leftlink ul li {
+    padding-bottom: 1.5rem;
+}
+
+header .rightlink {
+    display: none;
+    position: fixed;
+    font-size: 1.5rem;
+    color: var(--color-neon);
+    top: 50%;
+    right: -5.5rem;
+    transform: translateY(-50%);
+}
+
+header .rightlink p {
+    transform: rotateZ(90deg);
+}
+
+header .rightlink p::before,header .rightlink p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7rem;
+    height: 0.1rem;
+    background-color: var(--color-neon);
+}
+
+header .rightlink p::before {
+    left: -8rem;
+}
+
+header .rightlink p::after {
+    right: -8rem;
+}
+
+@media screen and (min-width: 750px) {
+
+    header .leftlink, header .rightlink {
+        display: initial;
+    }
+
+    header .burger {
+        display: none;
+    }
+    header nav {
+        display: initial;
+        margin-right: 2rem;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    header nav ul li {
+        font-size: 2rem;
+        margin: 0 1rem;
+    }
+
+    header nav ul li a{
+        text-decoration: none;
+        color: var(--color-neon);
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+}
+
+/* --------- Main-------- */
+
+main {
+    background-color: var(--color-back-green);
+}

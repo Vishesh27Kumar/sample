@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vishesh</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>vk</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">/portfolio</a></li>
+                <li><a href="#">/about me</a></li>
+                <li><a href="#">/resume</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="burger"><i class="fa fa-bars"></i></div>
+        <div class="overlay" id="overlay">
+            <div id="space"></div>
+            <div class="overlay-content">
+                <div class="cross" id="cross"><i class="fa fa-times"></i></div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Portfolio</li>
+                </ul>
+            </div>
+        </div>
+        <div class="leftlink">
+            <ul>
+                <li><i class="fab fa-github fa-2x"></i></li>
+                <li><i class="fab fa-linkedin fa-2x"></i></li>
+                <li><i class="fab fa-twitter fa-2x"></i></li>
+            </ul>
+        </div>
+        <div class="rightlink">
+            <p>vishesh2727@gmail.com</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section1">
+            <div class="content">
+                <h3>Hello! my name is</h3>
+                <h1>Vishesh Kumar</h1>
+                <h4>I am a software engineer</h4>
+                <p>I'm a software engineer based in
+                    Uttrakhand, IN specializing in building
+                    (and occasionally designing)
+                    exceptional websites, applications,
+                    and everything in between.</p>
+                <ul>
+                    <li><i class="fab fa-github fa-2x"></i></li>
+                    <li><i class="fab fa-linkedin fa-2x"></i></li>
+                    <li><i class="fab fa-twitter fa-2x"></i></li>
+                </ul>
+                <p class="email">Email: vishesh2727@gmail.com</p>
+                <a href="#">About me</a>
+            </div>
+            <div class="svg"><img src="./assets/undraw_feeling_proud.svg" alt="portfolio banner image">
+            </div>
+        </section>
+        <section class="section2">
+            <div class="svg"><img src="./assets/Group 22.svg" alt="skill banner image"></div>
+            <div class="content">
+                <h1>Skills:</h1>
+                <p>
+                    I am a MERN stack web developer but i am open to
+                    learn new technologies. I like this stack because it is
+                    easy to scale web applications and it enables
+                    developers to build highly efficient websites.
+
+                </p>
+                <p class="subheading">
+                    Here are a few technologies I've been
+                    working with for last six months :
+                </p>
+                <div class="techlist">
+                    <ul>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> ReactJS</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> NodeJS</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> ExpressJS</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> HTML & CSS</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> JavaScript (ES6+)
+                        </li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> MongoDB</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> GitHub</li>
+                    </ul>
+                </div>
+                <p class="subheading">
+                    Some of the tools I use in my projects and work :
+                </p>
+                <div class="toollist">
+                    <ul>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> VS Code</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> Photoshop</li>
+                        <li><span class="arrow"><i class="fas fa-caret-right fa-xs "></i></span> Adove XD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="content">
+                <h1>Contact me:</h1>
+                <p>I am currently looking for new opportunities
+                    (full-time) in tech industries. If you want to
+                    contact me feel free to send me a mail to my
+                    inbox. If you have any query I can you help
+                    with let me know.</p>
+                <a href="#">Get In Touch</a>
+            </div>
+            <div class="svg"><img src="./assets/undraw_message_sent_1030.svg" alt=""></div>
+
+        </section>
+        <footer>
+            <p>Designed & Developed by Vishesh Kumar</p>
+            <p>2020</p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById("burger").addEventListener("click", () => {
+            document.getElementById("overlay").style.left = "0vw";
+        });
+
+        document.getElementById("cross").addEventListener("click", () => {
+            document.getElementById("overlay").style.left = "100vw";
+        });
+        document.getElementById("space").addEventListener("click", () => {
+            document.getElementById("overlay").style.left = "100vw";
+        });
+    </script>
+
+</body>
+
+</html>
