@@ -247,23 +247,6 @@
     .section1 .content a {
         font-size: 1.8rem;
     }
-    @keyframes text2 {
-      0%, 50%, 100% {
-        width: 0;
-      }
-      
-      60%, 90% {
-        width: 27rem;
-      }
-    }
-    @keyframes text1 {
-      0%, 50%, 100% {
-        width: 0;
-      }
-      10%, 40% {
-        width: 27rem;
-      }
-    }
 }
 
 @media screen and (max-width: 359px) {
@@ -273,27 +256,6 @@
         word-spacing: 0rem;
         border-right: 10px solid var(--color-neon);
     }
-    @keyframes text2 {
-        0%, 50%, 100% {
-          width: 0;
-        }
-        
-        60%, 90% {
-          width: 27rem;
-        }
-      }
-      @keyframes text1 {
-        0%, 50%, 100% {
-          width: 0;
-        }
-        10%, 40% {
-          width: 27rem;
-        }
-      }
-
-      .text_1, .text_2 {
-        animation-duration: 15s;
-      }
 }
 
 @media screen and (max-width: 330px) {
