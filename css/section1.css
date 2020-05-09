@@ -233,7 +233,7 @@
     .section1 .content h4 {
         margin-top: 1rem;
         font-size: 2rem;
-        letter-spacing: 0;
+        word-spacing: 0rem;
         border-right: 10px solid var(--color-neon);
     }
     @keyframes text2 {
@@ -242,7 +242,7 @@
         }
         
         60%, 90% {
-          width: 27rem;
+          width: 27.5rem;
         }
       }
       @keyframes text1 {
@@ -250,11 +250,17 @@
           width: 0;
         }
         10%, 40% {
-          width: 27rem;
+          width: 27.5rem;
         }
       }
 
       .text_1, .text_2 {
         animation-duration: 15s;
       }
+}
+
+@media screen and (max-width: 330px) {
+    .section1 .content {
+      margin-top: 2.5rem;
+    }
 }
