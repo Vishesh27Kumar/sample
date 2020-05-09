@@ -201,14 +201,14 @@
 @media screen and (max-width: 486px) {
     .section1 .content h3 {
         /* margin-top: 12rem; */
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .section1 .content h1 {
         font-size: 3.5rem;
     }
     .section1 .content h4 {
         margin-top: 1rem;
-        font-size: 2.2rem;
+        font-size: 2rem;
         letter-spacing: 0;
         border-right: 10px solid var(--color-neon);
     }
@@ -267,7 +267,7 @@
 @media screen and (max-width: 359px) {
     .section1 .content h4 {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
         word-spacing: 0rem;
         border-right: 10px solid var(--color-neon);
     }
