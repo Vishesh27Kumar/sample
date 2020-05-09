@@ -224,7 +224,7 @@
       }
       
       60%, 90% {
-        width: 28rem;
+        width: 30rem;
       }
     }
     @keyframes text1 {
@@ -232,7 +232,7 @@
         width: 0;
       }
       10%, 40% {
-        width: 28rem;
+        width: 30rem;
       }
     }
 }
@@ -251,7 +251,7 @@
       }
       
       60%, 90% {
-        width: 28rem;
+        width: 30rem;
       }
     }
     @keyframes text1 {
@@ -259,7 +259,7 @@
         width: 0;
       }
       10%, 40% {
-        width: 28rem;
+        width: 30rem;
       }
     }
 }
