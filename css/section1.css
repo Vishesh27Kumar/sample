@@ -201,9 +201,10 @@
 @media screen and (max-width: 486px) {
     .section1 .content h3 {
         /* margin-top: 12rem; */
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .section1 .content h1 {
+      margin: 1rem 0 0rem 0;
         font-size: 3.5rem;
     }
     .section1 .content h4 {
@@ -251,7 +252,7 @@
       }
       
       60%, 90% {
-        width: 28rem;
+        width: 27rem;
       }
     }
     @keyframes text1 {
@@ -259,7 +260,7 @@
         width: 0;
       }
       10%, 40% {
-        width: 28rem;
+        width: 27rem;
       }
     }
 }
@@ -277,7 +278,7 @@
         }
         
         60%, 90% {
-          width: 28rem;
+          width: 27rem;
         }
       }
       @keyframes text1 {
@@ -285,7 +286,7 @@
           width: 0;
         }
         10%, 40% {
-          width: 28rem;
+          width: 27rem;
         }
       }
 
