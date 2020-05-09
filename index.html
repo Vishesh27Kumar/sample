@@ -11,7 +11,7 @@
 
 <body>
 
-    <header>
+    <header id="navbar">
         <div class="logo">
             <h1>vk</h1>
         </div>
@@ -26,12 +26,19 @@
         <div class="overlay" id="overlay">
             <div id="space"></div>
             <div class="overlay-content">
-                <div class="cross" id="cross"><i class="fa fa-times"></i></div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <li>Portfolio</li>
+                    <a href="#home" class="overlayLinks">
+                        <li>Home</li>
+                    </a>
+                    <a href="#skill" class="overlayLinks">
+                        <li>Skills</li>
+                    </a>
+                    <a href="#project" class="overlayLinks">
+                        <li>Projects</li>
+                    </a>
+                    <a href="#contact" class="overlayLinks">
+                        <li>Contact me</li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -48,11 +55,12 @@
     </header>
 
     <main>
-        <section class="section1">
+        <section class="section1" id="home">
             <div class="content">
                 <h3>Hello! my name is</h3>
                 <h1>Vishesh Kumar</h1>
-                <h4>I am a software engineer</h4>
+                <h4><span class="text_1">I am a software engineer</span><span class="text_2">I build web
+                        applications</span></h4>
                 <p>I'm a software engineer based in
                     Uttrakhand, IN specializing in building
                     (and occasionally designing)
@@ -69,7 +77,7 @@
             <div class="svg"><img src="./assets/undraw_feeling_proud.svg" alt="portfolio banner image">
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="skill">
             <div class="svg"><img src="./assets/Group 22.svg" alt="skill banner image"></div>
             <div class="content">
                 <h1>Skills:</h1>
@@ -108,7 +116,7 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section class="section3" id="project">
             <div class="heading">
                 <h1>Projects I've Built:</h1>
             </div>
@@ -157,7 +165,7 @@
             </div>
         </section>
         <section class="section4">
-            <div class="content">
+            <div class="content" id="contact">
                 <h1>Contact me:</h1>
                 <p>I am currently looking for new opportunities
                     (full-time) in tech industries. If you want to
@@ -177,15 +185,28 @@
 
     <script>
         document.getElementById("burger").addEventListener("click", () => {
-            document.getElementById("overlay").style.left = "0vw";
-        });
-
-        document.getElementById("cross").addEventListener("click", () => {
-            document.getElementById("overlay").style.left = "100vw";
+            document.getElementById("overlay").classList.toggle("toggleOverlay");
         });
         document.getElementById("space").addEventListener("click", () => {
-            document.getElementById("overlay").style.left = "100vw";
+            document.getElementById("overlay").classList.toggle("toggleOverlay");
         });
+
+        Array.from(document.getElementsByClassName("overlayLinks")).forEach(e => {
+            e.addEventListener("click", () => {
+                document.getElementById("overlay").classList.toggle("toggleOverlay");
+            });
+        });
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-7rem";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
 
 </body>

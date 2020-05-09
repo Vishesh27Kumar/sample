@@ -19,7 +19,7 @@
 
 .section2 .content h1 {
     color: var(--color-neon);
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .section2 .content p {
@@ -51,6 +51,12 @@
     display: none;
 }
 
+@media screen and (max-width: 750px) {
+    .section2 .content h1 {
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 930px) {
 
     .section2 .svg {
@@ -59,10 +65,6 @@
 
     .section2 .content {
         width: 50%;
-    }
-
-    .section2 .content h1 {
-        font-size: 4rem;
     }
 
     .section2 .content p {
@@ -75,10 +77,6 @@
 }
 
 @media screen and (max-width: 1140px) {
-
-    .section2 .content h1 {
-        font-size: 4rem;
-    }
 
     .section2 .content p {
         margin: 1rem 0 2rem 0;

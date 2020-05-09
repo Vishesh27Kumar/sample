@@ -54,7 +54,7 @@
 }
 
 .projectDesBox .projectHeading {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     color: var(--color-neon);
     margin-bottom: 2rem;
@@ -95,11 +95,11 @@
     border-radius: 0.4rem;
 }
 
-.project1 .projectImage:hover ~ .projectDesBox, .project1 .projectDesBox:hover {
+.project1:hover .projectDesBox {
     margin-left: -2rem;
 }
 
-.project2 .projectImage:hover + .projectDesBox, .project2 .projectDesBox:hover {
+.project2:hover .projectDesBox {
     margin-right: -2rem;
 }
 
@@ -125,7 +125,7 @@
         height: 20rem;
     }
     .section3 .project-list .projectHeading {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .section3 .project-list .projectDescription p, .projectDesBox ul {
         font-size: 1.8rem;
@@ -135,7 +135,7 @@
 @media screen and (max-width: 950px) {
 
     .section3 .heading h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .section3 .project-list .projectImage {
@@ -154,6 +154,14 @@
        background-color: rgba(30, 107, 96, 0.878);
     }
 
+    .project1 .projectDesBox .projectHeading {
+        font-size: 3rem;
+    }
+
+    .project2 .projectDesBox .projectHeading {
+        font-size: 3rem;
+    }
+
     .project1 .projectDesBox .projectDescription {
         max-width: 80%;
     }
@@ -162,19 +170,34 @@
         position: absolute;
         margin: 0 !important;
         left: 50%;
+        width: 60rem;
+        height: 30rem;
         align-items: center;
+        background-color: rgba(30, 107, 96, 0.878);
         transform: translateX(-50%);
-     }
-     .project1 .projectImage:hover ~ .projectDesBox, .project1 .projectDesBox:hover {
+    }
+
+     .project2 .projectDesBox .projectDescription {
+        max-width: 80%;
+    }
+
+    .project1:hover .projectDesBox {
         margin-left: -4rem;
     }
-    
-    .project2 .projectImage:hover + .projectDesBox, .project2 .projectDesBox:hover {
+
+    .project2:hover .projectDesBox {
         margin-right: -4rem;
     }
+
 }
 
 @media screen and (max-width: 750px) {
+
+    .section3 .heading h1{
+        padding-top: 5rem;
+        font-size: 3rem;
+        word-spacing: -1rem;
+    }
 
     .section3 .project-list .project1{
         flex-direction: column;
@@ -203,6 +226,10 @@
         background-color: rgba(60, 213, 190, 0.176)
     }
 
+    .section3 .project-list .projectDesBox .projectHeading {
+        font-size: 2.5rem;
+    }
+
     .projectDesBox .projectDescription {
         background-color: transparent;
         padding-left: 0;
@@ -224,10 +251,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .section3 .heading h1{
-        font-size: 3rem;
-        word-spacing: -1rem;
-    }
+    
     .section3 .project-list .projectImage {
         width: 80vw;
         height: 40vw;

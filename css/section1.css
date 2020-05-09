@@ -3,7 +3,7 @@
     padding: 7rem 2rem 0rem;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     max-width: 160rem;
     margin: 0 auto;
 }
@@ -11,6 +11,7 @@
 .section1 .content {
     width: 100%;
     z-index: 10;
+    margin-top: 5rem;
 }
 
 .section1 .content h3 {
@@ -70,10 +71,69 @@
 }
 
 .section1 .svg {
+  margin-top: 13rem;
     display: none;
 }
 
+@keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 40rem;
+    }
+  }
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 40rem;
+    }
+  }
+
+.text_1 {
+    animation: text1;
+  }
+  .text_2 {
+    animation: text2;
+  }
+  .text_1, .text_2 {
+    overflow: hidden;
+    font-family: monospace;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 15s;
+    animation-timing-function: steps(26, end);
+    animation-iteration-count: infinite;
+  }
+
+
 @media screen and (max-width: 1020px) {
+
+    @keyframes text2 {
+        0%, 50%, 100% {
+          width: 0;
+        }
+        
+        60%, 90% {
+          width: 29rem;
+        }
+      }
+      @keyframes text1 {
+        0%, 50%, 100% {
+          width: 0;
+        }
+        10%, 40% {
+          width: 29rem;
+        }
+      }
+
+      .text_1, .text_2 {
+        animation-duration: 15s;
+      }
 
     .section1 .content h3 {
         /* margin-top: 15rem; */
@@ -109,6 +169,7 @@
     }
 
     .section1 .content {
+      margin-top: 13rem;
         width: 60%;
     }
 
@@ -175,4 +236,25 @@
         letter-spacing: 0;
         border-right: 10px solid var(--color-neon);
     }
+    @keyframes text2 {
+        0%, 50%, 100% {
+          width: 0;
+        }
+        
+        60%, 90% {
+          width: 27rem;
+        }
+      }
+      @keyframes text1 {
+        0%, 50%, 100% {
+          width: 0;
+        }
+        10%, 40% {
+          width: 27rem;
+        }
+      }
+
+      .text_1, .text_2 {
+        animation-duration: 15s;
+      }
 }
