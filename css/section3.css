@@ -1,0 +1,271 @@
+
+.section3 {
+    padding: 0rem 2rem 0rem;
+    min-height: 100vh;
+    max-width: 160rem;
+    margin: 0 auto;
+}
+
+.section3 .heading h1{
+    margin-top: 5rem;
+    font-size: 4.5rem;
+    color: var(--color-neon);
+}
+
+.section3 .project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 .project-list {
+    margin-top: 4rem;
+}
+
+.section3 .project-list .project1,.project2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.project1 .projectDesBox {
+    height: 30rem;
+    width: 45rem;
+    margin-left: -4rem;
+    z-index: 2; 
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.project2 .projectDesBox {
+    height: 30rem;
+    width: 45rem;
+    margin-right: -4rem;
+    z-index: 2; 
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.projectDesBox .projectHeading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-neon);
+    margin-bottom: 2rem;
+}
+
+.projectDesBox .projectDescription {
+    font-size: 1.8rem;
+    color: var(--color-grey);
+    background-color: var(--color-dark-green);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 0.1rem 0.2rem 1rem rgba(44, 44, 44, 0.469); 
+}
+
+.projectDesBox .projectTechnologies ul {
+    font-size: 1.8rem;
+    color: var(--color-grey);
+    list-style-type: none;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.project1 .projectDesBox .projectTechnologies ul li {
+    padding-left: 2rem;
+}
+
+.project2 .projectDesBox .projectTechnologies ul li {
+    padding-right: 2rem;
+}
+
+.section3 .project-list .projectImage {
+    width: 60rem;
+    height: 30rem;
+    box-shadow: 0.1rem 0.2rem 1rem rgba(44, 44, 44, 0.469); 
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid var(--color-dark-green); 
+    border-radius: 0.4rem;
+}
+
+.project1 .projectImage:hover ~ .projectDesBox, .project1 .projectDesBox:hover {
+    margin-left: -2rem;
+}
+
+.project2 .projectImage:hover + .projectDesBox, .project2 .projectDesBox:hover {
+    margin-right: -2rem;
+}
+
+.section3 .project-list img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1180px) {
+    .section3 .project-list .projectImage {
+        width: 46rem;
+        height: 23rem;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+
+    .section3 .heading h1{
+        font-size: 4rem;
+    }
+
+    .section3 .project-list .projectImage {
+        width: 40rem;
+        height: 20rem;
+    }
+    .section3 .project-list .projectHeading {
+        font-size: 2rem;
+    }
+    .section3 .project-list .projectDescription p, .projectDesBox ul {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .section3 .heading h1{
+        font-size: 3.5rem;
+    }
+
+    .section3 .project-list .projectImage {
+        width: 60rem;
+        height: 30rem;
+    }
+
+    .project1 .projectDesBox {
+       position: absolute;
+       margin: 0 !important;
+       left: 50%;
+       width: 60rem;
+       height: 30rem;
+       align-items: center;
+       transform: translateX(-50%);
+       background-color: rgba(30, 107, 96, 0.878);
+    }
+
+    .project1 .projectDesBox .projectDescription {
+        max-width: 80%;
+    }
+
+    .project2 .projectDesBox {
+        position: absolute;
+        margin: 0 !important;
+        left: 50%;
+        align-items: center;
+        transform: translateX(-50%);
+     }
+     .project1 .projectImage:hover ~ .projectDesBox, .project1 .projectDesBox:hover {
+        margin-left: -4rem;
+    }
+    
+    .project2 .projectImage:hover + .projectDesBox, .project2 .projectDesBox:hover {
+        margin-right: -4rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .section3 .project-list .project1{
+        flex-direction: column;
+        border: 2px solid var(--color-neon);
+        border-radius: 4px;
+    }
+
+    .section3 .project-list .project2 {
+        flex-direction: column-reverse;
+        border: 2px solid var(--color-neon);
+        border-radius: 4px;
+    }
+
+    .section3 .project-list .projectImage {
+        width: 60vw;
+        height: 30vw;
+        border: none;
+        box-shadow: none;
+    }
+    .section3 .project-list .projectDesBox {
+        padding-left: 2rem !important;
+        position: relative;
+        max-width: 60vw;
+        max-height: 25rem;
+        align-items: flex-start !important;
+        background-color: rgba(60, 213, 190, 0.176)
+    }
+
+    .projectDesBox .projectDescription {
+        background-color: transparent;
+        padding-left: 0;
+        box-shadow: none;
+        min-width: 100%;
+    }
+
+    .section3 .project-list .projectHeading {
+        margin-bottom: 0;
+    }
+    .projectDesBox ul {
+        padding-top: 0 !important;
+    }
+    
+    .projectDesBox ul li{
+        padding-left: 0 !important;
+        padding-right: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .section3 .heading h1{
+        font-size: 3rem;
+        word-spacing: -1rem;
+    }
+    .section3 .project-list .projectImage {
+        width: 80vw;
+        height: 40vw;
+    }
+    .section3 .project-list .projectDesBox {
+        padding-left: 2rem !important;
+        position: relative;
+        max-width: 80vw;
+        align-items: flex-start !important;
+        background-color: rgba(60, 213, 190, 0.176)
+    }
+    .projectDesBox ul {
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section3 .project-list .projectImage {
+        width: 80vw;
+        height: 40vw;
+    }
+    .section3 .project-list .projectDesBox {
+        padding-left: 2rem !important;
+        position: relative;
+        max-width: 80vw;
+        align-items: flex-start !important;
+        background-color: rgba(60, 213, 190, 0.176)
+    }
+    .projectDesBox ul {
+        flex-wrap: nowrap !important;
+    }
+    .section3 .project-list .projectDescription p, .projectDesBox ul li{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .section3 {
+        padding: 5rem 7rem 0rem;
+    }
+}
