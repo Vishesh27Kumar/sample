@@ -1,0 +1,40 @@
+#nav-icon {
+    margin: 1em;
+    width: 3rem;
+  }
+   
+  #nav-icon div {
+    background-color: var(--color-neon);
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 0.5rem auto;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
+  #first {
+      width: 3rem;
+  }
+  #second {
+    width: 2rem;
+
+  }
+  #third {
+    width: 1rem;
+
+  }
+
+  .transformright {
+    width: 3rem !important;
+    transform: translateY(8px) rotate(135deg);
+  }
+
+  .transformleft {
+    width: 3rem !important;
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .secondremove {
+    transform: scale(0);
+  }
